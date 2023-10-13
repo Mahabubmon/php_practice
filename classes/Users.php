@@ -5,7 +5,7 @@
         private $con;
 
 
-
+//construct function
         public function __construct(){
             define("HOSTNAME", "localhost");
             define("USERNAME", "root");
