@@ -1,9 +1,10 @@
 <?php 
-    include "inc/test.php";
-    include "inc/test2.php";
+  
+  //variable declaration
+      $x = 5;
+      $y = 9;
+      $z = $x + $y;  
+      echo "The sum of $x and $y is =  $z";
 
 
-    new Mahabub\php();
-
-
-?>
+  ?>
