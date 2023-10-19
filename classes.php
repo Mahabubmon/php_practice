@@ -64,5 +64,16 @@ echo "<br>";
 echo $y;
 echo "<br>";
 
+//var dump
+$z = 12345;
+$a = 124.45;
+var_dump($z);
+var_dump($a);
+//array
+$road = array ( "lalbag ","Posta","Azimpur"); 
+
+var_dump($road);
+
+
 
   ?>
