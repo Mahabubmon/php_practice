@@ -55,5 +55,14 @@
   echo "<h3>".$text1."</h3>";
   print "<h3>".$text2."</h3>";
 
+  //string
+$x = "Hey it's me";
+$y = 'Hey its me';
+
+echo $x;
+echo "<br>";
+echo $y;
+echo "<br>";
+
 
   ?>
