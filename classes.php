@@ -38,4 +38,22 @@
   myTest1();
 
   echo $y;
+
+ //global-index
+  $f = 8;
+  $g = 7;
+  function myTest2() {
+    $GLOBALS['h'] = $GLOBALS['f'] + $GLOBALS['g'];
+  }
+  myTest2();
+  echo $h;
+
+  // //echo with variables
+  $text1 = "This is php";
+  $text2 = "This is programming";
+
+  echo "<h3>".$text1."</h3>";
+  print "<h3>".$text2."</h3>";
+
+
   ?>
