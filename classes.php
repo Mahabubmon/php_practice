@@ -67,12 +67,27 @@ echo "<br>";
 //var dump
 $z = 12345;
 $a = 124.45;
+
 var_dump($z);
 var_dump($a);
 //array
 $road = array ( "lalbag ","Posta","Azimpur"); 
 
 var_dump($road);
+
+  public function __construct($floor,$unit){
+    $this->floor = $floor;
+    $this->unit = $unit;
+  }
+
+  public function calculation(){
+    return "My Home is a" . $this->floor. "floor".$this->unit."unit";
+    
+  }
+  
+
+$myHome = new home("5 ","4");
+echo $myHome->calculation();
 
 
 
