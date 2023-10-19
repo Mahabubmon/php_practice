@@ -89,6 +89,14 @@ var_dump($road);
 $myHome = new home("5 ","4");
 echo $myHome->calculation();
 
+//Null
+$x = "Hey' there";
+$x = null;
+echo $x;
+
+return string length
+echo strlen("Hello world!");
+
 
 
   ?>
