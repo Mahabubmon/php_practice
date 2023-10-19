@@ -108,6 +108,18 @@ var_dump(is_float($y));
 $z = 1.9e411;
 var_dump($z);
 
+/ // value is not a number
+$a = acos(8);
+var_dump($a);
+//Check if the variable is numeric
+$b = 4856;
+var_dump(is_numeric($b));
+
+// // Cast float to int
+$c = 23465.768;
+$int_cast = (int)$c;
+echo $int_cast;
+
 
 
 
