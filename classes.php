@@ -98,5 +98,17 @@ return string length
 echo strlen("Hello world!");
 
 
+//type of variable
+$x = 5985;
+var_dump(is_int($x));
+$y = 10.365;
+var_dump(is_float($y));
+
+//numeric value is finite or infinite
+$z = 1.9e411;
+var_dump($z);
+
+
+
 
   ?>
