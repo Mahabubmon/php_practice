@@ -14,4 +14,28 @@
       echo "<br>";
 
     }
+
+
+    //local variable declaration
+    function test(){
+      $b = 4;//local variable
+      echo "<p>Variable b inside function is: $b</p>";
+    }
+    test();
+    echo "This is the value of a : $b";
+
+    mytest();
+    echo "This is the value of a : $a";
+  //global variable
+  $c = 5;
+  $d = 10;
+
+  function myTest1() {
+  global $c, $d;
+  $e = $c + $d;
+  }
+
+  myTest1();
+
+  echo $y;
   ?>
