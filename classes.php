@@ -137,6 +137,17 @@ echo(rand());
 with range by rand
 echo(rand(10, 100));
 
+// constant with sensitivity
+define("GREETING","hey looking for me");
+echo GREETING;
+// without sensitivity
+define("GREETING", "Welcome to W3Schools.com!", true);
+echo greeting;
+constant array
+define("road",[
+  "lalbag","posta","azimpur"]);
+echo road[0];
+
 
 
   ?>
