@@ -232,6 +232,8 @@
 //   echo "The number is2: $x <br>";
 // }
 //namespace
+namespace App\classes;
+
 class Student {
   public $name = "Mahabub";
 }
