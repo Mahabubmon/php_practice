@@ -195,7 +195,15 @@ while($a <= 5){
   $a++;
 }
 
+$b = 1;
+do{
+  echo "this is a number: $b <br>";
+  $b++;
+}while($b <= 5);
 
+for ($c=0; $c<=5; $c++){
+  echo $c;
+}
 
 
 
