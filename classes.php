@@ -205,6 +205,12 @@ for ($c=0; $c<=5; $c++){
   echo $c;
 }
 
+//foreach
+$age = array("rahul"=>"29","tamim"=>"25","arif"=>"27");
+
+foreach($age as $value){
+  echo "$value <br>";
+}
 
 
   ?>
