@@ -120,6 +120,13 @@ $c = 23465.768;
 $int_cast = (int)$c;
 echo $int_cast;
 
+//math
+echo(pi());
+
+//argument lowest higest value
+echo(min(0, 150, 30, 20, -8, -200)); 
+echo(max(0, 150, 30, 20, -8, -200));
+
 
 
 
