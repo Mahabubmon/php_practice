@@ -147,7 +147,22 @@ constant array
 define("road",[
   "lalbag","posta","azimpur"]);
 echo road[0];
+//defin
+define("bag","yellowBag");
 
+function store(){
+  echo bag;
+}
+store();
+// if..else statement
+$x = date("H");
+
+if($x >"10"){
+  echo "Have a good day";
+}else{
+  echo "good morning";
+  
+}
 
 
   ?>
