@@ -127,6 +127,15 @@ echo(pi());
 echo(min(0, 150, 30, 20, -8, -200)); 
 echo(max(0, 150, 30, 20, -8, -200));
 
+//absulete positiv value
+echo(abs(-6.5));
+echo(sqrt(4));
+round
+echo(round(0.7));
+//random number
+echo(rand());
+with range by rand
+echo(rand(10, 100));
 
 
 
