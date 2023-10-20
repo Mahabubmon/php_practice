@@ -173,6 +173,20 @@ if ($t < "10") {
 } else {
   echo "Have a good night!";
 }
+//switch case
+switch
+$favdish = "meat";
+switch($favdish){
+  case "meat":
+  echo "favorite dish is meate";
+  break;
+  case "fish";
+  echo "It's good for health";
+  break;
+  default:
+  echo "your favorite dis none of them";
+    
+}
 
 
 
