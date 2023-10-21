@@ -246,12 +246,23 @@
 
 // echo sumation(5 , "5 days");
 
+// declare (strict_types=1);
+
+// function setHeight(int $minheight = 500 ){
+
+//   echo "the min height is : $minheight<br>";
+// }
+// // setHeight(300);
+// setHeight();
+
+
 declare (strict_types=1);
+function sum(int $x, int $y){
+  $z = $x + $y;
+  return $z;
 
-function setHeight(int $minheight = 500 ){
-
-  echo "the min height is : $minheight<br>";
 }
-// setHeight(300);
-setHeight();
+echo "45 + 45 " . sum(45,45) . "<br>";
+echo "50 + 50 " . sum(50,50) . "<br>";
+
   ?>
