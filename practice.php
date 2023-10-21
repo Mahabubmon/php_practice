@@ -232,19 +232,26 @@
 //   echo "The number is2: $x <br>";
 // }
 //function
-function addNumbers(int $a, int $b){
-  return $a + $b;
+// function addNumbers(int $a, int $b){
+//   return $a + $b;
+// }
+
+// echo addNumbers(5 , "5 days");
+
+// //with striction
+// declare(stric_types=1);
+// function sumation(int $a, int $b){
+//   return $a + $b;
+// }
+
+// echo sumation(5 , "5 days");
+
+declare (strict_types=1);
+
+function setHeight(int $minheight = 500 ){
+
+  echo "the min height is : $minheight<br>";
 }
-
-echo addNumbers(5 , "5 days");
-
-//with striction
-declare(stric_types=1);
-function sumation(int $a, int $b){
-  return $a + $b;
-}
-
-echo sumation(5 , "5 days");
-
-
+// setHeight(300);
+setHeight();
   ?>
