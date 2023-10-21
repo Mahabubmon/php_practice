@@ -238,5 +238,13 @@ function addNumbers(int $a, int $b){
 
 echo addNumbers(5 , "5 days");
 
+//with striction
+declare(stric_types=1);
+function sumation(int $a, int $b){
+  return $a + $b;
+}
+
+echo sumation(5 , "5 days");
+
 
   ?>
