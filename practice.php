@@ -231,12 +231,12 @@
 //   }
 //   echo "The number is2: $x <br>";
 // }
-//namespace
-namespace App\classes;
-
-class Student {
-  public $name = "Mahabub";
+//function
+function addNumbers(int $a, int $b){
+  return $a + $b;
 }
+
+echo addNumbers(5 , "5 days");
 
 
   ?>
