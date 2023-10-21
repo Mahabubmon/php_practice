@@ -256,13 +256,31 @@
 // setHeight();
 
 
-declare (strict_types=1);
-function sum(int $x, int $y){
-  $z = $x + $y;
-  return $z;
+// declare (strict_types=1);
+// function sum(int $x, int $y){
+//   $z = $x + $y;
+//   return $z;
 
+// }
+// echo "45 + 45 " . sum(45,45) . "<br>";
+// echo "50 + 50 " . sum(50,50) . "<br>";
+
+// function add_five(&$value) {
+//   $value += 5;
+// }
+
+// $num = 2;
+// add_five($num);
+// echo $num;
+//array
+$road = array("lalbag","posta","Azimpur");
+echo "my home".$road[0].",".$road[1].".";
+$arrlength = count($road);
+
+
+for($x = 0; $x < $arrlength; $x++){
+  echo $road[$x];
+  echo "<br>";
 }
-echo "45 + 45 " . sum(45,45) . "<br>";
-echo "50 + 50 " . sum(50,50) . "<br>";
 
   ?>
