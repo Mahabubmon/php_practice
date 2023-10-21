@@ -273,22 +273,31 @@
 // add_five($num);
 // echo $num;
 //array
-$road = array("lalbag","posta","Azimpur");
-echo "my home".$road[0].",".$road[1].".";
-$arrlength = count($road);
+// $road = array("lalbag","posta","Azimpur");
+// echo "my home".$road[0].",".$road[1].".";
+// $arrlength = count($road);
 
 
-for($x = 0; $x < $arrlength; $x++){
-  echo $road[$x];
-  echo "<br>";
-}
+// for($x = 0; $x < $arrlength; $x++){
+//   echo $road[$x];
+//   echo "<br>";
+// }
 
-//foreach array
-$age = array("rahul"=>"30","tamim"=>"24","arif"=>"27");
+// //foreach array
+// $age = array("rahul"=>"30","tamim"=>"24","arif"=>"27");
 
-foreach($age as $X => $x_value){
-  echo "Key=" .$x . "value=". $x_value;
-  echo "<br>";
+// foreach($age as $X => $x_value){
+//   echo "Key=" .$x . "value=". $x_value;
+//   echo "<br>";
+// }
+
+for ($row = 0; $row < 4; $row++) {
+  echo "<p><b>Row number $row</b></p>";
+  echo "<ul>";
+  for ($col = 0; $col < 3; $col++) {
+    echo "<li>".$cars[$row][$col]."</li>";
+  }
+  echo "</ul>";
 }
 
   ?>
