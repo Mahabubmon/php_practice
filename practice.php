@@ -283,4 +283,12 @@ for($x = 0; $x < $arrlength; $x++){
   echo "<br>";
 }
 
+//foreach array
+$age = array("rahul"=>"30","tamim"=>"24","arif"=>"27");
+
+foreach($age as $X => $x_value){
+  echo "Key=" .$x . "value=". $x_value;
+  echo "<br>";
+}
+
   ?>
