@@ -291,13 +291,21 @@
 //   echo "<br>";
 // }
 
-for ($row = 0; $row < 4; $row++) {
-  echo "<p><b>Row number $row</b></p>";
-  echo "<ul>";
-  for ($col = 0; $col < 3; $col++) {
-    echo "<li>".$cars[$row][$col]."</li>";
-  }
-  echo "</ul>";
-}
+// for ($row = 0; $row < 4; $row++) {
+//   echo "<p><b>Row number $row</b></p>";
+//   echo "<ul>";
+//   for ($col = 0; $col < 3; $col++) {
+//     echo "<li>".$cars[$row][$col]."</li>";
+//   }
+//   echo "</ul>";
+// }
 
+
+$cars = array(
+  array("toyota",20,30),
+  array("Alion",15,45),
+  array("corolla",46,70),
+);
+
+echo $cars[0][0]."In stock". $cars[0][1]."sold".$cars[0][2]."<br>";
   ?>
