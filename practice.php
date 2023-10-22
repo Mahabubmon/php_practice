@@ -301,11 +301,21 @@
 // }
 
 
-$cars = array(
-  array("toyota",20,30),
-  array("Alion",15,45),
-  array("corolla",46,70),
-);
+// $cars = array(
+//   array("toyota",20,30),
+//   array("Alion",15,45),
+//   array("corolla",46,70),
+// );
 
-echo $cars[0][0]."In stock". $cars[0][1]."sold".$cars[0][2]."<br>";
+// echo $cars[0][0]."In stock". $cars[0][1]."sold".$cars[0][2]."<br>";
+
+//multidimensional array for
+for($row = 0; $row < 4; $row++){
+  echo "<p>this is the Row number .$row. </p>";
+    echo"<ul>";
+    for($col = 0; $col < 3; $col++){
+      echo "<li>". $cars[$row][$col] ."</li>";
+    } 
+  echo "</ul>";
+}
   ?>
