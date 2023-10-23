@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
   
 //   //variable declaration
 //       $x = 5;
@@ -310,14 +310,14 @@
 // echo $cars[0][0]."In stock". $cars[0][1]."sold".$cars[0][2]."<br>";
 
 //multidimensional array for
-for($row = 0; $row < 4; $row++){
-  echo "<p>this is the Row number .$row. </p>";
-    echo"<ul>";
-    for($col = 0; $col < 3; $col++){
-      echo "<li>". $cars[$row][$col] ."</li>";
-    } 
-  echo "</ul>";
-}
+// for($row = 0; $row < 4; $row++){
+//   echo "<p>this is the Row number .$row. </p>";
+//     echo"<ul>";
+//     for($col = 0; $col < 3; $col++){
+//       echo "<li>". $cars[$row][$col] ."</li>";
+//     } 
+//   echo "</ul>";
+// }
   ?>
 
 <!-- <html>
@@ -345,7 +345,7 @@ for($row = 0; $row < 4; $row++){
 
 //form     
 <html>
-<body>
+<!-- <body>
 
 <form action="welcome.php" method="post">
 Name: <input type="text" name="name"><br>
@@ -353,5 +353,28 @@ E-mail: <input type="text" name="email"><br>
 <input type="submit">
 </form>
 
-</body>
-</html>
+</body> -->
+</html> -->
+
+<?php 
+ $name = $email = $gender = $comment = $website = "";
+
+
+ if($_SERVER["REQUEST_METHOD"]=="POST"){
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $website = test_input($_POST["website"]);
+  $comment = test_input($_POST["comment"]);
+  $gender = test_input($_POST["gender"]);
+ }
+
+ function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+
+ }
+
+
+?>
