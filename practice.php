@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
   
 //   //variable declaration
 //       $x = 5;
@@ -318,9 +318,9 @@
 //     } 
 //   echo "</ul>";
 // }
-  ?>
 
-<!-- <html>
+
+ <html>
      <body>
 
      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -338,7 +338,7 @@
         // echo $name;
        //}
      //} -->
-     ?> -->
+
 
   
 
@@ -353,7 +353,7 @@ E-mail: <input type="text" name="email"><br>
 </form>
 
 </body> -->
-</html> -->
+</html> 
 
 <?php 
 //  $name = $email = $gender = $comment = $website = "";
@@ -502,3 +502,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+
+Name: <input type="text" name="name" value="<?php echo $name;?>">
+
+E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+
+Website: <input type="text" name="website" value="<?php echo $website;?>">
+
+Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+
+Gender:
+<input type="radio" name="gender"
+<?php if (isset($gender) && $gender=="female") echo "checked";?>
+value="female">Female
+<input type="radio" name="gender"
+<?php if (isset($gender) && $gender=="male") echo "checked";?>
+value="male">Male
+<input type="radio" name="gender"
+<?php if (isset($gender) && $gender=="other") echo "checked";?>
+value="other">Other
