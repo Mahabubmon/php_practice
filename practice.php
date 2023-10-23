@@ -440,5 +440,11 @@ $name = test_input($_POST["name"]);
 if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
   $nameErr = "Only letters and white space allowed";
 }
+
+//the e-mail address is not well-formed
+$email = test_input($_POST["email"]);
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $emailErr = "Invalid email format";
+}
 ?>
 
