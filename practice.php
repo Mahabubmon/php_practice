@@ -446,5 +446,11 @@ $email = test_input($_POST["email"]);
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $emailErr = "Invalid email format";
 }
+
+//Validate URL
+$website = test_input($_POST["website"]);
+if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+  $websiteErr = "Invalid URL";
+}
 ?>
 
