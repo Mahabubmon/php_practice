@@ -530,3 +530,7 @@ echo "Today is " . date("l");
 
 //time formate
 echo "The time is " . date("h:i:sa");
+
+
+$d= strtotime("8:38pm October 24 2023");
+echo "created date is" . date("Y-m-d h:i:sa", $d);
