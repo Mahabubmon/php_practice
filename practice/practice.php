@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
   
 //   //variable declaration
 //       $x = 5;
@@ -503,11 +503,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-Name: <input type="text" name="name" value="<?php echo $name;?>">
+//Name: <input type="text" name="name" value="<?php echo $name;?>">
 
-E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+//E-mail: <input type="text" name="email" value="<?php echo $email;?>">
 
-Website: <input type="text" name="website" value="<?php echo $website;?>">
+//Website: <input type="text" name="website" value="<?php echo $website;?>">
 
 Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
 
@@ -520,4 +520,10 @@ value="female">Female
 value="male">Male
 <input type="radio" name="gender"
 <?php if (isset($gender) && $gender=="other") echo "checked";?>
-value="other">Other
+value="other">Other -->
+
+//date formate
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+echo "Today is " . date("l");
