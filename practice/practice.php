@@ -543,3 +543,9 @@ echo date("Y-m-d h:i:sa", $d) . "<br>";
 
 $d=strtotime("+3 Months");
 echo date("Y-m-d h:i:sa", $d) . "<br>";
+
+
+//fclose,fgets
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+echo fgets($myfile);
+fclose($myfile);
