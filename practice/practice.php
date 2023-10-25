@@ -754,3 +754,11 @@ print_r($_SESSION);
 $_SESSION["favcolor"] = "yellow";
 print_r($_SESSION);
 ?>
+
+<?php
+// remove all session variables
+session_unset();
+
+// destroy the session
+session_destroy();
+?>
