@@ -606,7 +606,6 @@ if(isset($_POST["submit"])){
 
 <?php 
 //complete upload_file
-<?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -655,4 +654,27 @@ if ($uploadOk == 0) {
   }
 }
 ?>
+
+
+<?php 
+//cookie
+$cookie_name = "user";
+$cookie_value = " Jon Doe";
+
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30),"/");
+
 ?>
+
+<html>
+  <body>
+    <?php 
+    if(!isset($_COOKIE[$cookie_name])){
+      echo "Cookie named '" . $cookie_name . "' is not set!";
+    }else {
+      echo "Cookie '". $cookie_name ."' is not set!";
+      echo "Value is:" . $_COOKIE[$cookie_name];
+    }
+    
+    ?>
+  </body>
+</html>
