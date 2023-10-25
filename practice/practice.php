@@ -320,13 +320,11 @@
 // }
 
 
- <html>
-     <body>
 
-     <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-       Name: <input type="text" name="fname">
-       <input type="submit">
-     </form>
+    //  <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+    //    Name: <input type="text" name="fname">
+    //    <input type="submit">
+    //  </form>
 
    // <?php
      //if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -343,19 +341,14 @@
   
 
 //form     
-<html>
-<!-- <body>
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
+// <form action="welcome.php" method="post">
+// Name: <input type="text" name="name"><br>
+// E-mail: <input type="text" name="email"><br>
+// <input type="submit">
+// </form>
 
-</body> -->
-</html> 
 
-<?php 
 //  $name = $email = $gender = $comment = $website = "";
 
 
@@ -375,155 +368,155 @@ E-mail: <input type="text" name="email"><br>
 
 //  }
 // define variables and set to empty values
- $nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+//  $nameErr = $emailErr = $genderErr = $websiteErr = "";
+// $name = $email = $gender = $comment = $website = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-  }
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//   if (empty($_POST["name"])) {
+//     $nameErr = "Name is required";
+//   } else {
+//     $name = test_input($_POST["name"]);
+//   }
 
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-  }
+//   if (empty($_POST["email"])) {
+//     $emailErr = "Email is required";
+//   } else {
+//     $email = test_input($_POST["email"]);
+//   }
 
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-  }
+//   if (empty($_POST["website"])) {
+//     $website = "";
+//   } else {
+//     $website = test_input($_POST["website"]);
+//   }
 
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
+//   if (empty($_POST["comment"])) {
+//     $comment = "";
+//   } else {
+//     $comment = test_input($_POST["comment"]);
+//   }
 
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
+//   if (empty($_POST["gender"])) {
+//     $genderErr = "Gender is required";
+//   } else {
+//     $gender = test_input($_POST["gender"]);
+//   }
+// }
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+// <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-Name: <input type="text" name="name">
-<span class="error">* <?php echo $nameErr;?></span>
-<br><br>
-E-mail:
-<input type="text" name="email">
-<span class="error">* <?php echo $emailErr;?></span>
-<br><br>
-Website:
-<input type="text" name="website">
-<span class="error"><?php echo $websiteErr;?></span>
-<br><br>
-Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-<br><br>
-Gender:
-<input type="radio" name="gender" value="female">Female
-<input type="radio" name="gender" value="male">Male
-<input type="radio" name="gender" value="other">Other
-<span class="error">* <?php echo $genderErr;?></span>
-<br><br>
-<input type="submit" name="submit" value="Submit">
+// Name: <input type="text" name="name">
+// <span class="error">* <?php //echo $nameErr;?></span>
+// <br><br>
+// E-mail:
+// <input type="text" name="email">
+// <span class="error">* <?php //echo $emailErr;?></span>
+// <br><br>
+// Website:
+// <input type="text" name="website">
+// <span class="error"><?php //echo $websiteErr;?></span>
+// <br><br>
+// Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+// <br><br>
+// Gender:
+// <input type="radio" name="gender" value="female">Female
+// <input type="radio" name="gender" value="male">Male
+// <input type="radio" name="gender" value="other">Other
+// <span class="error">* <?php //echo $genderErr;?></span>
+// <br><br>
+// <input type="submit" name="submit" value="Submit">
 
-</form>
-
-
-$name = test_input($_POST["name"]);
-if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-  $nameErr = "Only letters and white space allowed";
-}
-
-//the e-mail address is not well-formed
-$email = test_input($_POST["email"]);
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $emailErr = "Invalid email format";
-}
-
-//Validate URL
-$website = test_input($_POST["website"]);
-if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-  $websiteErr = "Invalid URL";
-}
-
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-?>
+// </form>
 
 
-//Name: <input type="text" name="name" value="<?php echo $name;?>">
+// $name = test_input($_POST["name"]);
+// if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+//   $nameErr = "Only letters and white space allowed";
+// }
 
-//E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+// //the e-mail address is not well-formed
+// $email = test_input($_POST["email"]);
+// if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//   $emailErr = "Invalid email format";
+// }
 
-//Website: <input type="text" name="website" value="<?php echo $website;?>">
+// //Validate URL
+// $website = test_input($_POST["website"]);
+// if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+//   $websiteErr = "Invalid URL";
+// }
 
-Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+// // define variables and set to empty values
+// $nameErr = $emailErr = $genderErr = $websiteErr = "";
+// $name = $email = $gender = $comment = $website = "";
+
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//   if (empty($_POST["name"])) {
+//     $nameErr = "Name is required";
+//   } else {
+//     $name = test_input($_POST["name"]);
+//     // check if name only contains letters and whitespace
+//     if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+//       $nameErr = "Only letters and white space allowed";
+//     }
+//   }
+
+//   if (empty($_POST["email"])) {
+//     $emailErr = "Email is required";
+//   } else {
+//     $email = test_input($_POST["email"]);
+//     // check if e-mail address is well-formed
+//     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//       $emailErr = "Invalid email format";
+//     }
+//   }
+
+//   if (empty($_POST["website"])) {
+//     $website = "";
+//   } else {
+//     $website = test_input($_POST["website"]);
+//     // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+//     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+//       $websiteErr = "Invalid URL";
+//     }
+//   }
+
+//   if (empty($_POST["comment"])) {
+//     $comment = "";
+//   } else {
+//     $comment = test_input($_POST["comment"]);
+//   }
+
+//   if (empty($_POST["gender"])) {
+//     $genderErr = "Gender is required";
+//   } else {
+//     $gender = test_input($_POST["gender"]);
+//   }
+// }
+
+
+
+//Name: <input type="text" name="name" value="<?php //echo $name;?>">
+
+//E-mail: <input type="text" name="email" value="<?php //echo $email;?>">
+
+//Website: <input type="text" name="website" value="<?php //echo $website;?>">
+
+Comment: <textarea name="comment" rows="5" cols="40"><?php //echo $comment;?></textarea>
 
 Gender:
 <input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="female") echo "checked";?>
+<?php //if (isset($gender) && $gender=="female") echo "checked";?>
 value="female">Female
 <input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="male") echo "checked";?>
+<?php //if (isset($gender) && $gender=="male") echo "checked";?>
 value="male">Male
 <input type="radio" name="gender"
-<?php if (isset($gender) && $gender=="other") echo "checked";?>
+<?php //if (isset($gender) && $gender=="other") echo "checked";?>
 value="other">Other -->
 
 //date formate
-echo "Today is " . date("Y/m/d") . "<br>";
+<!-- echo "Today is " . date("Y/m/d") . "<br>";
 echo "Today is " . date("Y.m.d") . "<br>";
 echo "Today is " . date("Y-m-d") . "<br>";
 echo "Today is " . date("l");
@@ -566,10 +559,29 @@ $txt = "Jane Doe\n";
 fwrite($myfile, $txt);
 fclose($myfile);
 
-//over write
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = "Mickey Mouse\n";
+//append text
+$myfile = fopen("newfile.txt", "a") or die("Unable to open file!");
+$txt = "Donald Duck\n";
 fwrite($myfile, $txt);
-$txt = "Minnie Mouse\n";
+$txt = "Goofy Goof\n";
 fwrite($myfile, $txt);
-fclose($myfile);
+fclose($myfile); -->
+
+<?php 
+
+
+//upload file
+
+<html>
+<body>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+
+</body>
+</html>
+
+?>
