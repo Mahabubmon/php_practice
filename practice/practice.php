@@ -762,3 +762,18 @@ session_unset();
 // destroy the session
 session_destroy();
 ?>
+
+
+<table>
+  <tr>
+    <td>Filter name</td>
+    <td>Filter Id</td>
+  </tr>
+
+<?php 
+ foreach (filter_list() as $id =>$filter)
+{
+  echo '<tr><td>' . $filter . '</td><td>' . filter_d($filter). '</td><tr>';
+}
+?>
+</table>
