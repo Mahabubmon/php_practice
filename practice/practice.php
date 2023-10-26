@@ -846,3 +846,15 @@ next($coder);
 echo "The current position key is:".key($coder);
 
 ?>
+<?php 
+$coder = aray (
+    "Rahul"=>"30"
+    "Arif"=>"45",
+    "Tamim"=>"20"
+            );
+krsort($coder );
+foreach($coder as $key=>$value){
+  echo "Name: ".$key.", Age:".$value."<br>";
+}
+
+?>
