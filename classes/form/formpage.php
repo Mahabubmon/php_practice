@@ -36,7 +36,11 @@ if(isset($_POST['submit'])){
     echo "menu" .$dropdown;
 }
 ?>
+<?php 
 
+
+
+?>
 <div id="output"></div>
 <form action="" method="post" name="myform" id="myform" onsubmit="formFunction();">
 <table>
@@ -62,12 +66,6 @@ if(isset($_POST['submit'])){
         <td><input type="Checkbox" name="course" Value="c#">C#</td>
     </tr>
     <tr>
-        <td>Username</td>
-        <td><input type="submit" Value="Submit"></td>
-        <td><input type="reset" Value="Reset"></td>
-    </tr>
-
-    <tr>
         <td>language</td>
         <td>
             <select name="dropdown">
@@ -78,6 +76,11 @@ if(isset($_POST['submit'])){
                 <option value="">c++</option>
             </select>
         </td>
+        <tr>
+        <td>Username</td>
+        <td><input type="submit" Value="Submit"></td>
+        <td><input type="reset" Value="Reset"></td>
+    </tr>
     </tr>
 </table>
 
