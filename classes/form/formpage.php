@@ -1,11 +1,14 @@
-<?php 
-if(isset($_POST['username'])){
-    $name = $_POST['username'];
-    echo "Username is :" .$name;
-}
-?>
+<script>
 
-<form action="" method="post" name="myform" id="myform">
+    function foramFunction(){
+    var name = document.myform.username.value;
+    var showData = "Username : "+name;
+    document.getElementById('output').innerHtml = showData;  
+    }
+</script>
+
+<div id="output"></div>
+<form action="" method="post" name="myform" id="myform" onsubmit="formFunction();">
 <table>
     <tr>
         <td>Username</td>
