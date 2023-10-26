@@ -19,9 +19,14 @@ if(isset($_POST['gender'])){
         echo "Others";
     }
 
-    echo $gen;
 }
 
+
+if(isset($_POST['submit'])){
+    $coder = $_POST['coder'];
+    echo "You Have slected: ";
+    
+}
 ?>
 
 <div id="output"></div>
@@ -41,6 +46,12 @@ if(isset($_POST['gender'])){
         <td><input type="radio" name="gender" Value="male">Male</td>
         <td><input type="radio" name="gender" Value="female">Female</td>
         <td><input type="radio" name="gender" Value="other">Other</td>
+    </tr>
+    <tr>
+        <td>Course</td>
+        <td><input type="Checkbox" name="course" Value="php">PHP</td>
+        <td><input type="Checkbox" name="course" Value="java">JAVA</td>
+        <td><input type="Checkbox" name="course" Value="c#">C#</td>
     </tr>
     <tr>
         <td>Username</td>
