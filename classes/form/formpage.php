@@ -61,6 +61,19 @@ if(isset($_POST['submit'])){
         <td><input type="submit" Value="Submit"></td>
         <td><input type="reset" Value="Reset"></td>
     </tr>
+
+    <tr>
+        <td>language</td>
+        <td>
+            <select>
+                <option value="">Select One</option>
+                <option value="">PHP</option>
+                <option value="">Java</option>
+                <option value="">c#</option>
+                <option value="">c++</option>
+            </select>
+        </td>
+    </tr>
 </table>
 
 
