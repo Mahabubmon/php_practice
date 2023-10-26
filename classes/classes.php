@@ -2,7 +2,7 @@
 
 class Home{
 
-    public $name;
+    public $name = "RAhul"; 
     public $unit;
 
     public function houseName(){
@@ -14,6 +14,9 @@ class Home{
     }
     
 }
+
+$houseOne = new House;
+echo  $houseOne->name;
 
 
 ?>
