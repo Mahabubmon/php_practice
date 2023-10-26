@@ -7,11 +7,11 @@ class Home{
 
     public function houseName(){
 
-        echo "Home name is:".$this->name;
+        echo "Home name is:".$this->name."<br/>";
 
     }
-    public function houseUnit(){
-
+    public function houseUnit($value){
+        echo "Home unit is about:".$this->unit=$value;
 
     }
     
@@ -20,6 +20,7 @@ class Home{
 $houseOne = new Home;
 echo  $houseOne->name;
 echo  $houseOne->houseName();
+echo  $houseOne->houseUnit("50");
 
 
 ?>
