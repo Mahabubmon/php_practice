@@ -10,6 +10,15 @@
 <?php 
 if(isset($_POST['gender'])){
     $gen = $_POST['gender'];
+    if($gen == "Male"){
+        echo "You are male";
+    }elseif($gen == "Female"){
+        echo "you are a Female";
+
+    }else{
+        echo "Others";
+    }
+
     echo $gen;
 }
 
@@ -22,11 +31,7 @@ if(isset($_POST['gender'])){
         <td>Username</td>
         <td><input type="text" name="username" require="1"></td>
     </tr>
-    <tr>
-        <td>Username</td>
-        <td><input type="submit" Value="Submit"></td>
-        <td><input type="reset" Value="Reset"></td>
-    </tr>
+   
     <tr>
         <td>Gender</td>
         <td></td>
@@ -35,6 +40,12 @@ if(isset($_POST['gender'])){
         <td>Gender</td>
         <td><input type="radio" name="gender" Value="male">Male</td>
         <td><input type="radio" name="gender" Value="female">Female</td>
+        <td><input type="radio" name="gender" Value="other">Other</td>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td><input type="submit" Value="Submit"></td>
+        <td><input type="reset" Value="Reset"></td>
     </tr>
 </table>
 
