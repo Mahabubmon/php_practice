@@ -25,6 +25,9 @@ if(isset($_POST['gender'])){
 if(isset($_POST['submit'])){
     $coder = $_POST['coder'];
     echo "You Have slected: ";
+    foreach($coder as $lang=>$value){
+        echo  $value.",";
+    }
     
 }
 ?>
