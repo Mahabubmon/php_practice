@@ -30,6 +30,11 @@ if(isset($_POST['submit'])){
     }
     
 }
+
+if(isset($_POST['submit'])){
+    $dropdown =  $_POST['dropdown'];
+    echo "menu" .$dropdown;
+}
 ?>
 
 <div id="output"></div>
@@ -65,7 +70,7 @@ if(isset($_POST['submit'])){
     <tr>
         <td>language</td>
         <td>
-            <select>
+            <select name="dropdown">
                 <option value="">Select One</option>
                 <option value="">PHP</option>
                 <option value="">Java</option>
