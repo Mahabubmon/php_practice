@@ -7,6 +7,8 @@ class Home{
 
     public function houseName(){
 
+        echo "Home name is:".$this->name;
+
     }
     public function houseUnit(){
 
@@ -15,8 +17,9 @@ class Home{
     
 }
 
-$houseOne = new House;
+$houseOne = new Home;
 echo  $houseOne->name;
+echo  $houseOne->houseName();
 
 
 ?>
