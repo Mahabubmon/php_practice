@@ -803,3 +803,14 @@ $str = "<h1>Hello WorldÆØÅ!</h1>";
 $newstr = filter_var($str, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 echo $newstr;
 ?>
+
+<?php
+//call back function
+function my_callback($item) {
+  return strlen($item);
+}
+
+$strings = ["apple", "orange", "banana", "coconut"];
+$lengths = array_map("my_callback", $strings);
+print_r($lengths);
+?>
