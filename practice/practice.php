@@ -1020,3 +1020,22 @@ echo "color: " .$apple->get_color();
 $apple = new Fruit();
 var-dump($apple instanceof Fruit);
 ?>
+
+//construct
+<?php 
+class Fruit
+{
+  public $name;
+  public $color;
+
+  function __construct(){
+    $this->name = $name;
+  }
+  function get_name(){
+    return $this->name;
+  }
+  # code...
+}
+$apple = new Fruit("Apple");
+echo $apple->get_name();
+?>
