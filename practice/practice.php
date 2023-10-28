@@ -1226,3 +1226,16 @@ class Strawberry extends Fruit {
 $strawberry = new Strawberry("Strawberry", "red", 50);
 $strawberry->intro();
 ?>
+
+//const
+
+<?php 
+class Goodbye
+{
+ const LEAVING_MESSAGE = "Thank you for your visiting my home";
+
+}
+
+echo Goodbye::LEAVING_MESSAGE;
+
+?>
