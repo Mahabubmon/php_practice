@@ -1080,3 +1080,20 @@ class Fruit {
 
 $apple = new Fruit("Apple");
 ?>
+
+//access modifier
+
+<?php 
+class Fruit
+{
+  public $name;
+  protected $color;
+  private $weight;
+}
+
+
+$mango = new Fruit();
+$mango->name = 'Mango';
+$mango->color = 'Yellow';//error
+$weight->weight = '300';//error
+?>
