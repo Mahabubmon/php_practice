@@ -1120,3 +1120,28 @@ $mango->set_name('Mango'); // OK
 $mango->set_color('Yellow'); // ERROR
 $mango->set_weight('300'); // ERROR
 ?>
+
+//inheritenc
+<?php 
+class Furit{
+  public $name;
+  public $color;
+  public function __construct($name,$color){
+    $this->name = $name;
+    $this->color = $color;
+
+  }
+  public function intro(){
+    echo "The fruit {$this->name} and the color is{$this->color}.";
+  }
+}
+
+class Strawberry extends Fruit {
+  public function message(){
+    echo "Am I a fruit or berry? ";
+  }
+}
+$straberry = new Strawberry ("Strawberry","red");
+$strawberry->message();
+$strawberry->intro();
+?>
