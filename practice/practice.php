@@ -985,3 +985,33 @@ echo $apple->get_name();
 echo "<br>";
 echo $banana->get_name();
 ?>
+
+<?php 
+class FRUIT
+{
+  public $name;
+  public $color;
+
+  //method 
+  function set_name($name){
+    $this->name = $name;
+
+  }
+  function get_name(){
+    return $this->name;
+  }
+  function set_color($color){
+    $this->color = $color;
+  }
+  function get_color(){
+    return $this->color;
+  }
+
+}
+$apple = new Fruit();
+$apple->set_name('Apple');
+$apple->set_color('Red');
+echo "Name:". $apple->get_name();
+echo "<br>";
+echo "color: " .$apple->get_color();
+?>
