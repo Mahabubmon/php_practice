@@ -1015,3 +1015,8 @@ echo "Name:". $apple->get_name();
 echo "<br>";
 echo "color: " .$apple->get_color();
 ?>
+
+<?php 
+$apple = new Fruit();
+var-dump($apple instanceof Fruit);
+?>
