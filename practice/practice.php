@@ -1453,3 +1453,18 @@ new greeting();
 
 
 ?>
+
+<?php 
+class A {
+  public static function welcome(){
+    echo "hello worl!";
+  }
+}
+class B {
+  public function message(){
+    A::welcome();
+  }
+}
+$obj = new B();
+echo $obj-> meddage();
+?>
