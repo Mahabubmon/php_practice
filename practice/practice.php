@@ -1323,3 +1323,18 @@ echo $class->prefixName("John Doe");
 echo "<br>";
 echo $class->prefixName("Jane Doe");
 ?>
+
+<?php 
+interface Animal {
+  public function makeSound();
+}
+
+class Cat implements animal{
+  public function makeSound(){
+    echo "Meow";
+  }
+}
+$animal = new Cat();
+$animal->makeSound();
+
+?>
