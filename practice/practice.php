@@ -1373,3 +1373,9 @@ foreach($animals as $animal){
 }
 
 ?>
+
+<?php
+class MyClass {
+  use TraitName;
+}
+?>
