@@ -1424,3 +1424,17 @@ $obj2->msg1();
 $obj2->msg2();
 
 ?>
+
+
+<?php 
+class greeting {
+  public static function welcome(){
+    echo "Hello World!";
+
+  }
+}
+
+//call static method
+greeting::welcome();
+
+?>
