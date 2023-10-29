@@ -1468,3 +1468,19 @@ class B {
 $obj = new B();
 echo $obj-> meddage();
 ?>
+
+<?php 
+class School{
+  protected static function getSchoolName(){
+    return "West_End_High_school";
+  }
+}
+class Schools extends School{
+  public $schoolName;
+  public function __construct(){
+    $this->schoolName = parent::getSchoolName();
+  }
+}
+$schools = new Schools;
+echo $schools->schoolName;
+?>
