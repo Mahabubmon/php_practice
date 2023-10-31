@@ -52,3 +52,22 @@ try{
 }
 $conn = null;
 ?>
+
+<?php 
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+
+//create connection
+$conn = new mysqli($servername,$username,$password);
+
+//Check connection
+$sql ="CREATE DATABSE myDB";
+if($conn->query($sql) === TRUE ){
+    echo " Database created successfully";
+}else {
+    "Error createing database: " .$conn->error;
+}
+$conn->close();
+?>
