@@ -37,7 +37,12 @@ if(isset($_POST['submit'])){
 }
 ?>
 <?php 
-
+if(isset($_POST['submit'])){
+    $name = $_POST['submit'];
+    $gender = $_POST['gender'];
+    $dep = $_POST['dep'];
+    $name = $_POST['submit'];
+}
 
 
 ?>
