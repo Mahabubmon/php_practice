@@ -14,3 +14,22 @@ if($conn->connect_error){
 echo "Connected successfully";
 
 ?>
+
+//procedural
+
+<?php 
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+$conn = mysqli_connect($servername,$username,$password);
+
+if(!$con){
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+
+
+
+?>
