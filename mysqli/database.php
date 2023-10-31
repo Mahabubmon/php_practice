@@ -13,6 +13,8 @@ if($conn->connect_error){
 }
 echo "Connected successfully";
 
+
+$conn->close();
 ?>
 
 //procedural
@@ -28,6 +30,8 @@ if(!$con){
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
+
+mysqli_close($conn);
 ?>
 
 <?php 
@@ -46,4 +50,5 @@ try{
 }catch(PDOExpection $e){
     echo "Connection failed: " . $e->getMessage();
 }
+$conn = null;
 ?>
