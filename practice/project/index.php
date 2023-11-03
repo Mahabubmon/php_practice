@@ -26,8 +26,12 @@ require 'db-connection.php';
         $todos = $conn->query("SELECT * FROM todos ORDER BY id DESC");
         ?>
         <div class="show-todo-section">
-            <?php if($todos->rowcount()=== 0){?>
+            <?php if($todos->rowcount > 0){?>
             <div class="todo-item"></div>
+            <div class="empty">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
             <input type="checkbox">
             <h2>This is _____ _____</h2>
             <small>created:11/03/2023</small>
