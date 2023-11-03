@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-List</title>
+    <link ref="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-section">
@@ -16,6 +17,7 @@
             </form>
         </div>
         <div class="show-todo-section">
+            <div class="todo-item"></div>
             <input type="checkbox">
             <h2>This is _____ _____</h2>
             <small>created:11/03/2023</small>
