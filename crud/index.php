@@ -16,3 +16,6 @@ $query ="CREATE TABLE IF NOT EXISTS users(
     thumbnail VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
+
+$stm =  $pdo->prepare($query);
+$stm->execute();
