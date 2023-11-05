@@ -33,7 +33,7 @@ try{
 
   //set the resulting array to associative
   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-  foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchall())) as $k=.$v){
+  foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchall())) as $k=>$v){
     echo "Error: " .$e->getMessage();
   }
   $conn = null;
