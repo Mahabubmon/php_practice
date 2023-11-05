@@ -38,6 +38,8 @@ try{
   }
   $conn = null;
   echo "</table>";
+}catch{
+    
 }
 
 
