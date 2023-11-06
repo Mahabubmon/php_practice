@@ -8,11 +8,18 @@ function buttonClickHandler() {
   const xhr = new XMLHttpRequest();
 
   //Open the object
-  xhr.open("GET", "mahabub.txt", true);
-
+  //   xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+  //post requist
+  xhr.open("POST", "https://dummy.restapiexample.com/api/v1/create", true);
+  xhr.getAllResponseHeaders(
+    "Content-type",
+    "appilication/x-www-form-urlencoded"
+  );
   //what to do when the respons is ready
   xhr.onload = function () {
     console.log(this.responseText);
   };
-  xhr.send();
+  //send the request
+  params = "name=test&salary=123&age=23";
+  xhr.send(params);
 }
