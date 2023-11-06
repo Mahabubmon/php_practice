@@ -40,6 +40,12 @@ function popHandler() {
     if (this.status === 200) {
       let obj = JSON.parse(this.responseText);
       console.log(obj);
+      let list = document.getElementById("list");
+      str = "";
+      for (key in obj) {
+        str += `<li>${obj[key].employee_name}</li>`;
+      }
+      list.innerHTML = str;
     } else {
       ("some error occured");
     }
