@@ -47,5 +47,14 @@ class Car extends Vehicle
     }
 }
 
+$myCar = new Car("4V", "Four", "Steel", "Sedan");
+
+echo "Mechine: " . $myCar->getMechine() . "<br>";
+echo "Wheel: " . $myCar->getWheel() . "<br>";
+echo "Body: " . $myCar->getBody() . "<br>";
+echo "Model: " . $myCar->getModel() . "<br>";
+
+echo "Car Model: " . $myCar->getModel() . "<br>";
+
 
 ?>
