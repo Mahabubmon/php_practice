@@ -30,5 +30,22 @@ abstract class Vehicle
 
 }
 
+class Car extends Vehicle
+{
+    protected $model;
+
+    public function __construct($mechine, $wheel, $body, $model)
+    {
+        parent::__construct($mechine, $wheel, $body);
+        $this->model = $model;
+    }
+
+    public function getModel()
+    {
+        return $this->model;
+
+    }
+}
+
 
 ?>
