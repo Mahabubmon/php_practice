@@ -11,7 +11,22 @@ abstract class Vehicle
         $this->wheel = $wheel;
         $this->body = $body;
     }
+    abstract public function getModel();
 
+    public function getMechine()
+    {
+        return $this->mechine;
+    }
+
+    public function getWheel()
+    {
+        return $this->wheel;
+    }
+
+    public function getBody()
+    {
+        return $this->body;
+    }
 
 }
 
