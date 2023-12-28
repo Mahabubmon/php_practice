@@ -16,6 +16,16 @@ trait msg2
     }
 }
 
+class Welcome
+{
+    use msg1;
+}
+
+class Welcome2
+{
+    use msg1, msg2;
+}
+
 
 
 ?>
